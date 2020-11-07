@@ -1,0 +1,10 @@
+<%= form_with(model: post, id: 'form') do |form| %>
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="actions">
+  <%= form.submit 'save', data: { disable_with: 'enviando', confirm: 'Are you sure?'}%>
+  </div>
+<% end %>
